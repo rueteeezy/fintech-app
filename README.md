@@ -45,44 +45,48 @@ fintech_app/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
+```
 
 🌱 Getting Started
 
 🖥️ Backend Setup (Spring Boot)
 
 1. Navigate to the backend folder:
-bash
-
+```bash
 cd backend
-2. Configure MySQL in src/main/resources/application.properties:
-properties
+```
 
+2. Configure MySQL in src/main/resources/application.properties:
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/fintech
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
+```
 
 3. Run the backend:
-bash
-
+```bash
 mvn spring-boot:run
+```
+
 Backend will run at:
 👉 http://localhost:8080
 
 🌐 Frontend Setup (React)
 Navigate to the frontend:
 
-bash
+```bash
 cd frontend
+```
 
 Install dependencies:
-bash
+```bash
 npm install
-
+```
 Start development server:
-bash
+```bash
 npm run dev
-
+```
 Frontend will run at:
 👉 http://localhost:5173
 
@@ -93,19 +97,19 @@ POST	/api/subscribers/add	Add new subscriber
 GET	/api/subscribers	Fetch all subscribers
 
 Example payload:
-json
-
+```json
 {
   "name": "John Doe",
   "email": "john@test.com"
 }
+```
 🧹 Git Ignore Rules
 The repository ignores:
-
+```text
 node_modules/
 .idea/
 .cache/
 dist/
 build/
 This keeps the repository clean and avoids committing large/generated files.
-
+```
