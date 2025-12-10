@@ -9,3 +9,5 @@ frontend/.cache/
 # Build outputs
 dist/
 build/
+
+.idea/
